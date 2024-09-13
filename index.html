@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/popup.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -37,7 +38,7 @@
 							<h2>Opéra national</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" class="button open-video" data-video-url="videos/videoScene7.mp4">Regardez la vidéo </a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -160,7 +161,19 @@
 
 			</div>
 
+			<!-- Conteneur de la pop-up -->
+			<div id="video-popup" class="popup">
+				<div class="popup-content">
+					<span class="close-btn">&times;</span>
+					<video id="popup-video" controls>
+						<source id="video-source" src="" type="video/mp4">
+						Votre navigateur ne supporte pas la vidéo.
+					</video>
+				</div>
+			</div>
+
 		<!-- Scripts -->
+			<script src="assets/js/popup.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
